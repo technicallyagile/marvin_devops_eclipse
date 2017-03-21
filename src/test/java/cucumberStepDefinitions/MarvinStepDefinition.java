@@ -2,12 +2,11 @@ package cucumberStepDefinitions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
+import static org.junit.Assert.*;
 import marvin.Marvin;
 import cucumber.api.java.en.Then;
 
 
-@SuppressWarnings("deprecation")
 public class MarvinStepDefinition {
 
 	Marvin marvin = null;
@@ -26,7 +25,7 @@ public class MarvinStepDefinition {
 	
 	@Then("^Marvin replies \"([^\"]*)\"$")
 	public void verifyAnswer(String testReplyString) throws Throwable {
-		Assert.assertEquals(testReplyString, lastReply);
+		assertEquals(testReplyString, lastReply);
 	}
 	
 }
