@@ -1,6 +1,8 @@
-Feature: List of scenarios.
+Feature: Marvin the Android
 
-  Scenario: Test Scenario
-    Given I have two numbers
-    When I add those numbers together
-    Then I get the right answer
+  Scenario: Talk to Marvin
+    Given I am talking to Marvin
+    When I say to Marvin, "Hello Marvin"
+    Then Marvin replies "Whatever."
+    
+    
