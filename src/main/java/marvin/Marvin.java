@@ -1,9 +1,23 @@
 package marvin;
 
-public class Marvin {
+import marvin.Answers;
 
+public class Marvin {
+	/* Broken implementation
+	public String talk(String statement) {
+		return "";
+	}
+	*/
+	
+	/* Working implementation
+	 */
 	public String talk(String statement)
 	{
-		return "";
+		if(statement.startsWith("Hello")) {
+			return "Whatever.";
+		}
+		
+		// else
+		return Answers.random_response();
 	}
 }

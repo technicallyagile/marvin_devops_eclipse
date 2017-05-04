@@ -28,4 +28,8 @@ public class MarvinStepDefinition {
 		assertEquals(testReplyString, lastReply);
 	}
 	
+	@Then("^Marvin does not reply \"([^\"]*)\"$")
+	public void verify_negative_Answer(String testReplyString) throws Throwable {
+		assertNotEquals(testReplyString, lastReply);
+	}
 }
